@@ -24,7 +24,7 @@
   ],
   "bot_controller": "rainbow",
   "colors": 40,
-  "speed": 180,
+  "speed": 80,
   "discord_token": "NDk4MTY3NTEyOTcwNjkwNTYx.Dp1DrA.2wGPfOWq2JrFUFsMZUQnV4CwCpo",
   "prefix": "!"
 }
