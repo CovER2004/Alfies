@@ -5,7 +5,7 @@ const prefix = '!';
 const bot_controller = config.bot_controller;
 const discord_token = config.discord_token;
 
-bot.login(discord_token); // token to change bot configuration
+bot.login(process.env.token); // token to change bot configuration
 
 bot.on('ready',()=>{
     console.log("Bot started") // code START
