@@ -12,6 +12,12 @@ bot.on('ready',()=>{
     bot.user.setActivity("!info - команды") // Play in the game "!info - команды"
 })
 
+bot.on('guildMemberAdd', member => {
+    let role = member.guild.roles.find('name','rainbow')
+    
+    member.addRole(role)
+}
+
 bot.on('message',(message)=>{
     var member = message.member;
     var author = message.author; // author of message
