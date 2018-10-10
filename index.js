@@ -16,7 +16,7 @@ bot.on('guildMemberAdd', member => {
     let role = member.guild.roles.find('name','rainbow')
     
     member.addRole(role)
-}
+})
 
 bot.on('message',(message)=>{
     var member = message.member;
