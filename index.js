@@ -9,7 +9,7 @@ bot.login(process.env.token); // token to change bot configuration
 bot.on('ready',()=>{
     console.log("Bot started") // code START
     bot.user.setStatus("online") // status - online
-    bot.user.setActivity("!info - команды") // Play in the game "!info - команды"
+    bot.user.setActivity("!info") // Play in the game "!info - команды"
 })
 
 bot.on('guildMemberAdd', member => {
@@ -24,13 +24,12 @@ bot.on('message',(message)=>{
     var msg = message.content.toUpperCase();
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
-
-    if(msg === prefix + 'CAKE' ){
-        message.channel.send("Я, люблю, **ТОРТИКИ**!!!")
-    }
+    
     if(msg === prefix + 'INFO'){
-        message.author.send("**Команды:**\n**!cake** - *тестовая фраза*\n**!purge <count>** - *удалять сообщения*")
+        message.author.send("**Команды:**\n**!purge <count>** - *удалять сообщения*")
     }
+    
+    
     if(msg.startsWith(prefix + 'PURGE')){
         message.delete();
 
