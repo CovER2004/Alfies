@@ -24,11 +24,15 @@ bot.on('message',(message)=>{
     var msg = message.content.toUpperCase();
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
+    let role = role();
     
     if(msg === prefix + 'INFO'){
         message.author.send("**Команды:**\n**!purge <count>** - *удалять сообщения*")
     }
     
+    if(msg.startsWith(prefix + 'color')) {
+        message.reply(role);
+    }
     
     if(msg.startsWith(prefix + 'PURGE')){
         message.delete();
