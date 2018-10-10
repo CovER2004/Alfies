@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 const config = require('./package.json');
 const prefix = '!';
 const bot_controller = config.bot_controller;
-const discord_token = config.discord_token;
 
 bot.login(process.env.token); // token to change bot configuration
 
