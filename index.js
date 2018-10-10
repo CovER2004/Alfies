@@ -30,7 +30,7 @@ bot.on('message',(message)=>{
         message.author.send("**Команды:**\n**!purge <count>** - *удалять сообщения*")
     }
     
-    if(msg === prefix + 'COLOR')) {
+    if(msg === prefix + 'COLOR') {
         message.reply(role);
     }
     
