@@ -4,8 +4,6 @@ const config = require('./package.json');
 const prefix = '!';
 const bot_controller = config.bot_controller;
 
-bot.login(process.env.token); // token to change bot configuration
-
 bot.on('ready',()=>{
     console.log("Bot started") // code START
     bot.user.setStatus("online") // status - online
@@ -90,3 +88,5 @@ place++;
 bot.on('ready', () => {
 setInterval(changeColor, config.speed);
 })
+
+bot.login(process.env.token); // token to change bot configuration
