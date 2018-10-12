@@ -1,3 +1,3 @@
 # Alfies
 
-Это код бота ALfies который я загрузил на heroku.com
+Это код бота Alfies который я загрузил на heroku.com
